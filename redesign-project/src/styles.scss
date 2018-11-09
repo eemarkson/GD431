@@ -2,28 +2,30 @@ body {
     background-color: #62718C
 }
 
-
-
-
 .background {
-    width: 98%;
-    padding-top: 40px;
-    padding-left: 2.5%;
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 2.5%;
     position: absolute;
 }
 
 .rectangle {
     width: 71%;
-    height: 25%;
+    height: 150px;
     border-radius: 25px;
     background-color: white;
     position: absolute;
-    margin-left: 17%;
+    margin-left: 12%;
 }
 
 .header {
     width: 65%;
     position: absolute;
-    padding-top: 8px;
-    padding-left: 20%;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.footer {
+    width: 20px;
+    margin-top: 500px;
 }
