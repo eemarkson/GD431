@@ -2,12 +2,7 @@ body {
     background-color: #62718C
 }
 
-.menu-icon {
-    &__line {
-        background-color: grey;
-        height: 2px;
-        margin: 8px auto;
-        transition: all 0.3s ease-in-out;
-        width: 42px;
-    }
+.header {
+    width: 35px;
+
 }
