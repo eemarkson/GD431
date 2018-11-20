@@ -1,16 +1,21 @@
+/* For desktop: */
 body {
     background-color: #62718C
 }
 
 .background {
-    width: 90%;
-    margin-top: 40px;
-    margin-left: 2.5%;
+    display: none;
+}
+
+.desktop_background {
+    width: 96%;
     position: absolute;
+    margin-left: 20px;
+    margin-top: 150px;
 }
 
 .rectangle {
-    width: 71%;
+    width: 100px;
     height: 150px;
     border-radius: 25px;
     background-color: white;
@@ -25,7 +30,50 @@ body {
     margin-left: 15%;
 }
 
-.footer {
-    width: 20px;
-    margin-top: 500px;
+/* For mobile: */
+@media only screen and (min-width: 326px) {
+
+    body {
+        background-color: #62718C
+    }
+
+    .background {
+        width: 90%;
+        margin-top: 40px;
+        margin-left: 2.5%;
+        position: absolute;
+    }
+
+    .rectangle {
+        width: 71%;
+        height: 150px;
+        border-radius: 25px;
+        background-color: white;
+        position: absolute;
+        margin-left: 12%;
+    }
+
+    .header {
+        width: 65%;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 15%;
+    }
+
+    .footer {
+        width: 35px;
+        margin-top: 392px;
+    }
+
+    .footer__insta {
+        margin-left: 8px;
+    }
+
+    .footer__fb {
+        margin-left: 10px;
+    }
+
+    .footer__menu {
+        margin-left: 168px;
+    }
 }
