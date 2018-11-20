@@ -11,27 +11,45 @@ body {
     width: 96%;
     position: absolute;
     margin-left: 20px;
-    margin-top: 150px;
+    margin-top: 175px;
 }
 
 .rectangle {
-    width: 100px;
-    height: 150px;
+    width: 400px;
+    height: 258px;
     border-radius: 25px;
     background-color: white;
     position: absolute;
-    margin-left: 12%;
+    margin-top: 24px;
+    margin-left: 60px;
 }
 
 .header {
-    width: 65%;
+    width: 370px;
     position: absolute;
-    margin-top: 10px;
-    margin-left: 15%;
+    margin-top: 40px;
+    margin-left: 75px;
 }
 
+
+.rectangle_large {
+    width: 96%;
+    height: 875px;
+    background-color: white;
+    position: absolute;
+    margin-top: 893px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    display: none;
+}
+
+
+
 /* For mobile: */
-@media only screen and (min-width: 326px) {
+@media only screen and (max-width: 326px) {
 
     body {
         background-color: #62718C
