@@ -1,55 +1,9 @@
-/* For desktop: */
 body {
-    background-color: #62718C
+    margin: 0;
 }
-
-.background {
-    display: none;
-}
-
-.desktop_background {
-    width: 96%;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 175px;
-}
-
-.rectangle {
-    width: 400px;
-    height: 258px;
-    border-radius: 25px;
-    background-color: white;
-    position: absolute;
-    margin-top: 24px;
-    margin-left: 60px;
-}
-
-.header {
-    width: 370px;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 75px;
-}
-
-
-.rectangle_large {
-    width: 96%;
-    height: 875px;
-    background-color: white;
-    position: absolute;
-    margin-top: 893px;
-    margin-left: 20px;
-    margin-bottom: 40px;
-}
-
-.footer {
-    display: none;
-}
-
-
 
 /* For mobile: */
-@media only screen and (max-width: 326px) {
+@media only screen and (max-width: 414px) {
 
     body {
         background-color: #62718C
@@ -57,41 +11,329 @@ body {
 
     .background {
         width: 90%;
-        margin-top: 40px;
-        margin-left: 2.5%;
-        position: absolute;
+        // margin-top: 40px;
+        // margin-left: 2.5%;
+        // position: absolute;
+        // padding: 15px;
+        margin-top: -80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .desktop_background {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    header {
+        position: relative;
     }
 
     .rectangle {
-        width: 71%;
+        width: 200px;
         height: 150px;
         border-radius: 25px;
         background-color: white;
-        position: absolute;
-        margin-left: 12%;
+        // position: absolute;
+        // margin-left: 12%;
+        // display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
 
     .header {
-        width: 65%;
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 15%;
+        width: 90%;
+        // position: absolute;
+        // margin-left: 15%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
     }
 
     .footer {
         width: 35px;
-        margin-top: 392px;
     }
 
     .footer__insta {
-        margin-left: 8px;
+        margin-left: 15px;
     }
 
     .footer__fb {
         margin-left: 10px;
     }
 
-    .footer__menu {
-        margin-left: 168px;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 415px) {
+    body {
+        background-color: #62718C
     }
+
+    .background {
+        display: none;
+    }
+
+    .desktop_background {
+        width: 96%;
+        // position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: -130px;
+    }
+
+    .rectangle {
+        width: 400px;
+        height: 258px;
+        border-radius: 25px;
+        background-color: white;
+        // position: absolute;
+        margin-top: 24px;
+        margin-left: 60px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .header {
+        // width: 65%;
+        // position: absolute;
+        // margin-left: 15%;
+        max-width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .menu_nav {
+        padding: 50px;
+        font-family: source-sans-pro, sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+
+    .site-nav__list {
+        display: flex;
+        list-style-type: none;
+        margin-left: 475px;
+        margin-top: -250px;
+        position: absolute;
+    }
+
+    .rectangle_large {
+        width: 96%;
+        height: 875px;
+        background-color: white;
+        // position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    .secondary_content {
+        display: grid;
+        grid-template-columns: 420px 420px 420px;
+        grid-template-rows: 80px 80px;
+        position: absolute;
+        margin-top: -900px;
+        padding-left: 90px;
+        color: #62718C;
+    }
+
+    h2 {
+        font-family: source-sans-pro,
+            sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        padding: 39px;
+    }
+
+    .h2__events {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .ul__events {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        list-style-type: none;
+        padding-top: 40px;
+        font-size: 18px;
+    }
+
+    .h2__hours {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .ul__hours {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        list-style-type: none;
+        line-height: 50px;
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .h2__contact {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    .ul__contact {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        list-style-type: none;
+        padding-top: 40px;
+        line-height: 25px;
+        font-size: 18px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+}
+
+
+// Variables
+$display-nav: 520px;
+
+// JS action classes
+[data-visible="false"] {
+    display: none;
+}
+
+.site-header {
+    display: flow-root;
+}
+
+.site-nav {
+    $bottom-height: 80px;
+
+    &__trigger {
+        position: absolute;
+        top: 500px;
+        right: 10px;
+
+        &[aria-expanded="true"] {
+            .menu-icon__line {
+                $yValue: 10px;
+                $deg: 45deg;
+
+                &:nth-child(1) {
+                    transform: translateY($yValue) rotate($deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-$yValue) rotate(-$deg);
+                }
+            }
+        }
+
+        @media screen and (min-width: $display-nav) {
+            display: none;
+        }
+    }
+
+    &__list {
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            background-color: rgba(#62718C, 0.75);
+            flex-direction: column;
+            height: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: $bottom-height;
+            width: 100vw;
+            margin-top: 0;
+
+            &[data-visible="true"] {
+                animation: expand 0.3s ease-in-out forwards; // see the expand animation below
+                // this changes the height and opacity of the mobile menu
+                display: flex;
+            }
+        }
+
+        @media screen and (min-width: $display-nav) {
+            display: flex;
+        }
+    }
+
+    &__list-item {
+        align-items: center;
+        display: flex;
+        flex: 1 0 auto;
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        opacity: 0.85;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            color: white;
+            font-size: 200%;
+        }
+    }
+
+    @keyframes expand {
+        from {
+            height: 0;
+            opacity: 0;
+        }
+
+        to {
+            height: calc(100vh - #{$bottom-height});
+            opacity: 1;
+        }
+    }
+
+}
+
+.menu-icon {
+    &__line {
+        background-color: white;
+        height: 3px;
+        margin: 8px auto;
+        transition: all 0.3s ease-in-out;
+        width: 42px;
+        margin-right: 10px;
+    }
+}
+
+.u-button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
 }
