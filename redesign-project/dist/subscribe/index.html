@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Subscribe | Emma's Tea Spot</title>
+</head>
+
+
+<body>
+    <header>
+    <div class="rectangle">
+        <a href="/">
+            <img src="https://static1.squarespace.com/static/59cee597bebafbd725f0d1f8/t/59cee7cad2b85766102d70fa/1540697069191/?format=1500w"
+                alt="Emma's Tea Spot: A Proper British Experience" class="header">
+    </div>
+    </a>
+    
+
+    <nav class="wrapper-site-nav">
+    <button id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset site-nav__trigger"
+        type="button">
+        <span aria-hidden="true" class="menu-icon">
+            <div class="menu-icon__line"></div>
+            <div class="menu-icon__line"></div>
+            <div class="menu-icon__line"></div>
+        </span>
+
+    </button>
+    <ul id="js-site-nav" class="u-list-reset site-nav__list" aria-hidden="false" data-visible="false">
+        <li class="menu_nav"><a>food</a></li>
+        <li class="menu_nav"><a>reservations</a></li>
+        <li class="menu_nav"><a>events</a></li>
+        <li class="menu_nav"><a>shop</a></li>
+        <li class="menu_nav" id="clickable_subscribe"><a><a href="/subscribe">subscribe</a></a></li>
+        
+    </ul>
+</nav>
+
+</header>
+
+
+    
+<h1 class="subscribe_header">
+    
+    Subscribe to our newsletter!
+</h1>
+
+<body>
+    <form action="/my-handling-form-page" method="post" class="form">
+        <div>
+            <label for="name">First Name:</label> <input type="text" id="firstname" name="user_name">
+        </div>
+        <div>
+            <label for="name">Last Name:</label> <input type="text" id="lastname" name="user_name">
+        </div>
+        <div>
+            <label for="mail">E-mail:</label> <input type="email" id="mail" name="user_mail">
+        </div>
+        <div class="button">
+            <button type="submit">Sign me up!</button>
+        </div>
+    </form>
+</body>
+
+
+    <script src="/js/menu.js"></script>
+
+</body>
+
+</html>
