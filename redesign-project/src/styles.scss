@@ -11,10 +11,6 @@ body {
 
     .background {
         width: 90%;
-        // margin-top: 40px;
-        // margin-left: 2.5%;
-        // position: absolute;
-        // padding: 15px;
         margin-top: -80px;
         display: block;
         margin-left: auto;
@@ -43,9 +39,6 @@ body {
         height: 140px;
         border-radius: 25px;
         background-color: white;
-        // position: absolute;
-        // margin-left: 12%;
-        // display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
@@ -53,8 +46,6 @@ body {
 
     .header {
         width: 90%;
-        // position: absolute;
-        // margin-left: 15%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -102,7 +93,6 @@ body {
 
     .desktop_background {
         width: 96%;
-        // position: absolute;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -114,7 +104,6 @@ body {
         height: 258px;
         border-radius: 25px;
         background-color: white;
-        // position: absolute;
         margin-top: 24px;
         margin-left: 60px;
     }
@@ -124,9 +113,6 @@ body {
     }
 
     .header {
-        // width: 65%;
-        // position: absolute;
-        // margin-left: 15%;
         max-width: 90%;
         margin: auto;
         padding: 20px;
@@ -161,7 +147,6 @@ body {
         width: 96%;
         height: 875px;
         background-color: white;
-        // position: absolute;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
@@ -280,10 +265,8 @@ body {
     }
 
     form {
-        /* Just to center the form on the page */
         margin: 0 auto;
         width: 400px;
-        /* To see the outline of the form */
         padding: 1em;
         border: 1px solid white;
         border-radius: 1em;
@@ -296,7 +279,6 @@ body {
     }
 
     label {
-        /* To make sure that all labels have the same size and are properly aligned */
         display: inline-block;
         width: 90px;
         text-align: right;
@@ -304,41 +286,27 @@ body {
 
     input,
     textarea {
-        /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
         font: 1em sans-serif;
-
-        /* To give the same size to all text fields */
         width: 300px;
         box-sizing: border-box;
-
-        /* To harmonize the look & feel of text field border */
         border: 1px solid #999;
     }
 
     input:focus,
     textarea:focus {
-        /* To give a little highlight on active elements */
         border-color: #62718C;
     }
 
     textarea {
-        /* To properly align multiline text fields with their labels */
         vertical-align: top;
-
-        /* To give enough room to type some text */
         height: 5em;
     }
 
     .button {
-        /* To position the buttons to the same position of the text fields */
         padding-left: 90px;
-        /* same size as the label elements */
     }
 
     button {
-        /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
         margin-left: .5em;
         color: #62718C;
         width: 100px;
@@ -349,10 +317,8 @@ body {
 
 }
 
-// Variables
 $display-nav: 520px;
 
-// JS action classes
 [data-visible="false"] {
     display: none;
 }
@@ -408,8 +374,7 @@ $display-nav: 520px;
             margin-top: 0;
 
             &[data-visible="true"] {
-                animation: expand 0.3s ease-in-out forwards; // see the expand animation below
-                // this changes the height and opacity of the mobile menu
+                animation: expand 0.3s ease-in-out forwards;
                 display: flex;
             }
         }
