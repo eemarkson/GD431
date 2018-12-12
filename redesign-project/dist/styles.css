@@ -56,9 +56,11 @@ body {
   }
   .footer {
     width: 35px;
+    position: absolute;
+    margin-top: -55px;
   }
   .footer__insta {
-    margin-left: 15px;
+    margin-left: 55px;
   }
   .footer__fb {
     margin-left: 10px;
